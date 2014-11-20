@@ -22,7 +22,20 @@ namespace DraftIt.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                "~/Scripts/angular.js",
+                "~/Scripts/angular-ui-router.js"
+            ));
+
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                "~/Angular/app.js",
+                "~/Angular/Controllers/*.js"//,
+                //"~/Angular/Services/*.js",
+                //"~/Angular/Directives/*.js"
+            ));
+
         }
     }
 }
