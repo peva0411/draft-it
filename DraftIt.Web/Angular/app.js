@@ -8,5 +8,10 @@
         url: "/",
         templateUrl: "angular/views/home.html",
         controller: 'home'
-    });
+    })
+    .state('drafts', {
+        url: '/drafts',
+        templateUrl: 'angular/views/drafts.html',
+        controller: 'drafts'
+        });
 });
