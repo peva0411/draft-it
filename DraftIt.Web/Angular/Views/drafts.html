@@ -1,6 +1,9 @@
 ﻿
 <div>
-    <ul class="list-unstyled">
-        <li ng-repeat="draft in drafts">{{draft}}</li>
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="draft in drafts">
+            <span class="badge">{{draft.category}}</span>
+            {{draft.name}}
+        </li>
     </ul>
 </div>

@@ -1,6 +1,17 @@
 ﻿angular.module("draftIt")
     .controller("drafts", [
         "$scope", function($scope) {
-        $scope.drafts = ["draft1", "draft2", "draft3"];
-    }
-    ]);
+            $scope.drafts = [
+                {
+                    name: "draft1",
+                    category: "food"
+                }, {
+                    name: "draft2",
+                    category: "animal"
+                }, {
+                    name: "draft3",
+                    category: "beer"
+                }
+            ];
+        }
+]);
