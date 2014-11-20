@@ -201,8 +201,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Angular\app.js" />
+    <Content Include="Angular\Controllers\draftDetails.js" />
     <Content Include="Angular\Controllers\drafts.js" />
     <Content Include="Angular\Controllers\home.js" />
+    <Content Include="Angular\Views\draftDetails.html" />
     <Content Include="Angular\Views\drafts.html" />
     <Content Include="Angular\Views\home.html" />
     <Content Include="Content\bootstrap-theme.css" />

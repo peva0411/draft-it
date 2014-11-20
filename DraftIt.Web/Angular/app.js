@@ -13,5 +13,10 @@
         url: '/drafts',
         templateUrl: 'angular/views/drafts.html',
         controller: 'drafts'
-        });
+    })
+    .state('details', {
+        url: '/drafts/details/:draftId',
+        templateUrl: 'angular/views/draftDetails.html',
+        controller: 'draftDetails'
+    });
 });
