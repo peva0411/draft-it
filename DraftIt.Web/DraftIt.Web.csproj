@@ -201,10 +201,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Angular\app.js" />
+    <Content Include="Angular\Controllers\createCategoryCtrl.js" />
+    <Content Include="Angular\Controllers\createDraft.js" />
+    <Content Include="Angular\Controllers\draftDetails.js" />
     <Content Include="Angular\Controllers\drafts.js" />
     <Content Include="Angular\Controllers\home.js" />
+    <Content Include="Angular\Services\categoryService.js" />
+    <Content Include="Angular\Services\draftService.js" />
+    <Content Include="Angular\Views\createCategory.html" />
+    <Content Include="Angular\Views\createDraft.html" />
+    <Content Include="Angular\Views\draftDetails.html" />
     <Content Include="Angular\Views\drafts.html" />
     <Content Include="Angular\Views\home.html" />
+    <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -212,6 +221,8 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-ui-router.js" />
     <Content Include="Scripts\angular-ui-router.min.js" />
@@ -225,6 +236,7 @@
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\angular-animate.min.js.map" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
@@ -257,7 +269,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Angular\Directives\" />
-    <Folder Include="Angular\Services\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

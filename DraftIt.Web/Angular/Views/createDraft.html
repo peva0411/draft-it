@@ -1,0 +1,32 @@
+﻿
+<form class="form-horizontal" ng-submit="create()">
+    <fieldset>
+        <legend>Create Draft</legend>
+        <div class="form-group">
+            <label class="col-lg-2" for="inputId">Id</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="inputId" ng-model="id"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2" for="inputName">Name</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="inputName" ng-model="name"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-2" for="inputCategory">Category</label>
+            <div class="col-lg-10">
+                <select ng-model="category">
+                    <option ng-repeat="cat in categories" value="{{cat}}">{{cat}}</option>
+                </select>
+                <a class="btn btn-link" ui-sref="createCategory">Add category</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

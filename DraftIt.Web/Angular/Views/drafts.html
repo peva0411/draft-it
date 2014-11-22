@@ -1,9 +1,14 @@
 ﻿
-<div>
-    <ul class="list-group">
-        <li class="list-group-item" ng-repeat="draft in drafts">
+<div class="row">
+    <div  class="col-md-offset-10 col-md-2">
+        <a class="btn btn-primary" ui-sref="createDraft"><i class="glyphicon glyphicon-plus"></i> Create</a>
+    </div>
+</div>
+<div class="row">
+    <ul class="col-md-12 list-group">
+        <li class="list-group-item" ng-repeat="draft in draft.drafts">
             <span class="badge">{{draft.category}}</span>
-            {{draft.name}}
+            <a ui-sref="details({draftId: draft.id})">{{draft.name}}</a>
         </li>
     </ul>
 </div>
