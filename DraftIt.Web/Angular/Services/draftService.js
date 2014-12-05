@@ -1,20 +1,19 @@
-﻿angular.module("draftIt").factory('draft', function() {
-    var drafts = [
-        {
-            id: 1,
-            name: "draft1",
-            category: "food"
-        }, {
-            id: 2,
-            name: "draft2",
-            category: "animal"
-        }, {
-            id: 3,
-            name: "draft3",
-            category: "beer"
-        }
-    ];
+﻿var app = angular.module("draftIt");
+
+app.factory('draft', ["$resource", "$q", function($resource, $q) {
     return {
-        drafts: drafts
+        getAllDrafts: function() {
+            var deferred = $q.defer();
+
+            $resource("/api/drafts").query()
+                .$promise
+                .then(function (data) {
+                    deferred.resolve(data);
+                }).catch(function(error) {
+                    deferred.reject(error);
+            });
+
+            return deferred.promise;
+        }
     };
-});
+}]);

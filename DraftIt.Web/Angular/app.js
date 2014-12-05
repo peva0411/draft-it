@@ -1,4 +1,4 @@
-﻿angular.module("draftIt", ['ui.router', 'ngAnimate']).config(function ($stateProvider, $urlRouterProvider) {
+﻿angular.module("draftIt", ['ui.router', 'ngAnimate', 'ngResource']).config(function ($stateProvider, $urlRouterProvider) {
     //
     // For any unmatched url, redirect to /state1
     $urlRouterProvider.otherwise("/");
