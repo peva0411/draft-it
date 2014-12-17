@@ -9,11 +9,10 @@ namespace DraftIt.Web.Controllers
         private readonly IUnitOfWork unitOfWork;
         private readonly IRepository<Category> categoryRepository;
 
-        public CategoryController()
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-            // TODO: hook up dependency injection
-            this.unitOfWork = new DraftItContext();
-            this.categoryRepository = unitOfWork.Get<Category>();
+            this.unitOfWork = unitOfWork;
+            this.categoryRepository = this.unitOfWork.Get<Category>();
         }
 
         // GET api/values
