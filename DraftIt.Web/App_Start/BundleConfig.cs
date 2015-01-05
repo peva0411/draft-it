@@ -27,6 +27,7 @@ namespace DraftIt.Web
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                 "~/Scripts/angular.js",
+                "~/Scripts/angular-route.js",
                 "~/Scripts/angular-ui-router.js",
                 "~/Scripts/angular-animate.js"
             ));
@@ -37,6 +38,15 @@ namespace DraftIt.Web
                 "~/Angular/Services/*.js"//,
                 //"~/Angular/Directives/*.js"
             ));
+
+            bundles.Add(new ScriptBundle("~/bundles/tsApp").Include(
+                "~/app/app.module.js",
+                "~/app/core/core.module.js",
+                "~/app/services/services.module.js",
+                "~/app/services/categories.service.js",
+                "~/app/categories/categories.module.js",
+                "~/app/categories/categories.controller.js",
+                "~/app/categories/categories.routes.js"));
 
         }
     }
